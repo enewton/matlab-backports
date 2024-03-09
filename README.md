@@ -34,20 +34,30 @@ The project is primarily going to tackle the simple helper functions which make
 MATLAB code cleaner, as oppose to the bigger pieces of new functionality, which
 is the main value that Mathworks charge for.
 
-The functions often will not be full implementations for every corner case or
-optional parameter, but hope to cover the main use cases. Please request
-additional functionality if it would be useful.
-
 In an attempt to avoid copyright issues, I am not viewing any Mathworks source
 in order to implement these functions, and deliberately have not copied their
 help text into this library. Hopefully Mathworks will see that this is a useful
 library for legitimate customers.
 
+## Limitations
+
+1 I will not be implementing any additional optional toolboxes. Partly because
+  it would be more likely to impact Mathworks revenue, and partly because they
+  are much harder to implement.
+
+2 The functions often will not be full implementations for every corner case or
+  optional parameter, but hope to cover the main use cases. Please request
+  additional functionality if it would be useful.
+
+3 Some functionality will be impossible to implement if it is part of the
+  language and you are using a very old MATLAB version. For example the string
+  type or tables.
+
 ## Installation
 
 Run activate.m
 
-    >> run <full-path-to-extracted-code>/backports/activate
+    >> run <full-path-to-extracted-code>/matlab-backports/activate
 
 This will add the necessary folders R20xxa/b to your MATLAB path to enable the
 functionality. If for example, you are running MATLAB R2022b, then the script
