@@ -7,7 +7,7 @@ Run modern MATLAB code on older versions of MATLAB.
   Exchange](https://mathworks.com/matlabcentral/fileexchange), only to find it
   will not work with your version.
 - Do you ever send your code to a fellow worker or customer, only to find they
-  can not run it.
+  cannot run it.
 
 This project could be for you.
 
@@ -22,7 +22,7 @@ features in each release to warrant upgrading.
 
 I have spent a lot of my professional life working at engineering companies who
 pay maintenance but for one reason or another, a project is frozen on an
-particular old version of MATLAB. I can see the new functions but can not use
+particular old version of MATLAB. I can see the new functions but cannot use
 them, and the code I write is constantly in an 'old style'.
 
 It is also frustrating when sending code to a user, or downloading a library

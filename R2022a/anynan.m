@@ -1,3 +1,3 @@
-function TF = anynan(A)
-    TF = any(isnan(A));
+function result = anynan(array)
+    result = any(isnan(array), 'all');
 end

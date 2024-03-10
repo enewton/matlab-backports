@@ -1,3 +1,3 @@
-function a = allfinite(matrix)
-    a = ~any(isnan(matrix));
+function result = allfinite(array)
+    result = all(isfinite(array), 'all');
 end
