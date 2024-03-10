@@ -60,7 +60,7 @@ Run activate.m
     >> run <full-path-to-extracted-code>/matlab-backports/activate
 
 This will add the necessary folders R20xxa/b to your MATLAB path to enable the
-functionality. If for example, you are running MATLAB R2022b, then the script
+functionality. For example, if you are running MATLAB R2022b, then the script
 will only add the folders R2023a and R2023b to your path.
 
 ## Contributing
