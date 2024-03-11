@@ -41,17 +41,17 @@ library for legitimate customers.
 
 ## Limitations
 
-1 I will not be implementing any additional optional toolboxes. Partly because
-  it would be more likely to impact Mathworks revenue, and partly because they
-  are much harder to implement.
+1. I will not be implementing any additional optional toolboxes. Partly because
+   it would be more likely to impact Mathworks revenue, and partly because they
+   are much harder to implement.
 
-2 The functions often will not be full implementations for every corner case or
-  optional parameter, but hope to cover the main use cases. Please request
-  additional functionality if it would be useful.
+2. The functions often will not be full implementations for every corner case or
+   optional parameter, but hope to cover the main use cases. Please request
+   additional functionality if it would be useful.
 
-3 Some functionality will be impossible to implement if it is part of the
-  language and you are using a very old MATLAB version. For example the string
-  type or tables.
+3. Some functionality will be impossible to implement if it is part of the
+   language and you are using a very old MATLAB version. For example the string
+   type or tables.
 
 ## Installation
 
@@ -74,10 +74,8 @@ be careful that I am not encroaching on Mathworks' copyright.
 
 ## License
 
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Contact
-
-Erik Newton - <erik_newton@hotmail.com>
 
 Project Link: <https://github.com/enewton/matlab-backports>
