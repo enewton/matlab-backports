@@ -3,7 +3,7 @@ function runTests()
     %   Using this as the built-in testing framework changes with MATLAB release and
     %   wanted something version agnostic.
 
-    test_path = fullfile(fileparts(mfilename("fullpath")),'tests')
+    test_path = fullfile(fileparts(mfilename("fullpath")),'tests');
     addpath(test_path)
     d = dir(fullfile(test_path,'*.m'));
 

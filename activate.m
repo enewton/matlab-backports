@@ -2,6 +2,10 @@ function activate(verbose)
 
     if nargin<1, verbose=false; end
 
+    if ~exist('isMATLABReleaseOlderThan','builtin')
+        addpath(fullfile(fileparts(mfilename("fullpath")),'R2020b'))
+    end
+    
     d = dir(fullfile(fileparts(mfilename("fullpath")),'R*'));
 
     if verbose, fprintf('Adding backports for:'); end
