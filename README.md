@@ -63,11 +63,23 @@ This will add the necessary folders R20xxa/b to your MATLAB path to enable the
 functionality. For example, if you are running MATLAB R2022b, then the script
 will only add the folders R2023a and R2023b to your path.
 
+## Bonus Functions
+
+The folder `future` contains some useful functions that do not currently exist
+in any version of MATLAB.
+
+To install use the `-future` option of activate:
+
+    >> activate -future
+
 ## Contributing
 
 I would welcome any suggestions of useful functions to add to this library. If
 you can explain your use case, then I can make sure it will work well enough for
 you.
+
+I can not test this on every version of MATLAB, so I owuld welcome any feedback
+of failures. Please tell me the MATLAB version and include any error output.
 
 For now I don't really want pull requests containing new functions as I need to
 be careful that I am not encroaching on Mathworks' copyright.
