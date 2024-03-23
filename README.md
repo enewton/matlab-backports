@@ -5,9 +5,9 @@ Run modern MATLAB code on older versions of MATLAB.
 - Are you restricted to a specific (old) version of MATLAB in your workplace?
 - Do you ever download a library from [File
   Exchange](https://mathworks.com/matlabcentral/fileexchange), only to find it
-  will not work with your version.
+  will not work with your version?
 - Do you ever send your code to a fellow worker or customer, only to find they
-  cannot run it.
+  cannot run it?
 
 This project could be for you.
 
