@@ -15,7 +15,7 @@ function activate(varargin)
     verbose = any(cellfun(@(p) strcmpi(p,'-VERBOSE'), varargin));
     future = any(cellfun(@(p) strcmpi(p,'-FUTURE'), varargin));
 
-    if ~exist('isMATLABReleaseOlderThan','builtin')
+    if ~exist('isMATLABReleaseOlderThan','file')
         addpath(fullfile(fileparts(mfilename('fullpath')),'R2020b'))
     end
 
