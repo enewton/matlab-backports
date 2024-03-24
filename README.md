@@ -14,7 +14,8 @@ This project could be for you.
 ## About The Project
 
 This is an open source implementation of some of the newer MATLAB low-level
-functions, which will, on a good day, allow you to run some newer MATLAB code.
+functions, which will, on a good day, allow you to run some newer code from an
+older version of MATLAB.
 
 The motivation behind this project is not to financially impact Mathworks by
 reducing the number of customers on maintenance. I think there are enough new
@@ -49,9 +50,9 @@ library for legitimate customers.
    optional parameter, but hope to cover the main use cases. Please request
    additional functionality if it would be useful.
 
-3. Some functionality will be impossible to implement if it is part of the
-   language and you are using a very old MATLAB version. For example the string
-   type or tables.
+3. Some functionality will be impossible to implement if it is a core part of
+   the language and you are using a very old MATLAB version. For example the
+   string type or tables.
 
 ## Installation
 
@@ -60,8 +61,8 @@ Run activate.m
     >> run <full-path-to-extracted-code>/matlab-backports/activate
 
 This will add the necessary folders R20xxa/b to your MATLAB path to enable the
-functionality. For example, if you are running MATLAB R2022b, then the script
-will only add the folders R2023a and R2023b to your path.
+functionality. For example, if you are running MATLAB R2023a, then the script
+will only add the folders R2023b and R2024a to your path.
 
 ## Bonus Functions
 
