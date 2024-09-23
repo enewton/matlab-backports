@@ -79,7 +79,7 @@ I would welcome any suggestions of useful functions to add to this library. If
 you can explain your use case, then I can make sure it will work well enough for
 you.
 
-I can not test this on every version of MATLAB, so I owuld welcome any feedback
+I can not test this on every version of MATLAB, so I would welcome any feedback
 of failures. Please tell me the MATLAB version and include any error output.
 
 For now I don't really want pull requests containing new functions as I need to
