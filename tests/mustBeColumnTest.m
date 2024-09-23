@@ -1,6 +1,6 @@
 function mustBeColumnTest()
     %MUSTBECOLUMNTEST Test script for mustBeColumn
-
+    
     %% Determine If Value Is Column Vector
     pass = false;
     try
@@ -11,32 +11,28 @@ function mustBeColumnTest()
             && strcmp(e.message, 'Value must be a column vector.');
     end
     assert(pass);
-
+    
+    % Positive case
+    u = ones(4,1);
+    mustBeColumn(u)
+    
     %% Validate That Function Input Is Numeric Column Vector
-    w = [35 42 33 70 25 23]';
-    r = DailyTotal(w);
-    assert(isequal(r, 228));
+    if ~isMATLABReleaseOlderThan('R2019b')
+        addpath(fullfile(fileparts(which(mfilename)), 'R2019b'))
 
-    % Negative case
-    pass = false;
-    try
-        w = [35 42 33 70 25 23];
-        r = DailyTotal(w);
-    catch e
-        pass = strcmp(e.identifier, 'MATLAB:validators:mustBeColumn') ...
-            && strcmp(e.message, 'Invalid argument at position 1. Value must be a column vector.');
-    end
-    assert(pass);
-
-end
-
-function r = DailyTotal(Sales)
-    arguments
-        Sales {mustBeColumn, mustBeNumeric}
-    end
-    if isempty(Sales)
-        r = 0;
-    else
-        r = sum(Sales);
+        w = [35 42 33 70 25 23]';
+        r = DailyTotalColumn(w);
+        assert(isequal(r, 228));
+        
+        % Negative case
+        pass = false;
+        try
+            w = [35 42 33 70 25 23];
+            r = DailyTotalColumn(w);
+        catch e
+            pass = strcmp(e.identifier, 'MATLAB:validators:mustBeColumn') ...
+                && strcmp(e.message, 'Invalid argument at position 1. Value must be a column vector.');
+        end
+        assert(pass);
     end
 end

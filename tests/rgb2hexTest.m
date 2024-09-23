@@ -11,7 +11,7 @@ function rgb2hexTest
     assert(hex == "#994DCC");
 
     %% Shorthand
-    hex = rgb2hex(RGB,Shorthand=true);
+    hex = rgb2hex(RGB, 'Shorthand', true);
     assert(hex == "#95C");
 
     %% Matrix

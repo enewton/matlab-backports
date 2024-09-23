@@ -15,7 +15,7 @@ function hex2rgbTest
         0.9922    0.9961    1.0000]) < 1e-4, 'all'));
 
     %% single
-    rgb = hex2rgb(hexStr, OutputType="single");
+    rgb = hex2rgb(hexStr, 'OutputType', 'single');
 
     assert(all(abs(rgb - [ ...
         0.0000    0.0039    0.0078
@@ -27,7 +27,7 @@ function hex2rgbTest
         0.9922    0.9961    1.0000]) < 1e-4, 'all'));
 
     %% uint8
-    rgb = hex2rgb(hexStr, OutputType="uint8");
+    rgb = hex2rgb(hexStr, 'OutputType', 'uint8');
 
     assert(isequal(rgb, [ ...
         00     1     2
@@ -39,7 +39,7 @@ function hex2rgbTest
         253   254   255]));
 
     %% uint16
-    rgb = hex2rgb(hexStr, OutputType="uint16");
+    rgb = hex2rgb(hexStr, 'OutputType', 'uint16');
     assert(isequal(rgb, [ ...
         0000     257     514
         0771    1028    1285
@@ -61,7 +61,7 @@ function hex2rgbTest
         1.0000    1.0000    1.0000
         ]) < 1e-4, 'all'));
 
-    rgb = hex2rgb(hexStr, OutputType="single");
+    rgb = hex2rgb(hexStr, 'OutputType', 'single');
     assert(all(abs(rgb - [ ...
         0.0000    0.0667    0.1333
         0.2000    0.2667    0.3333
@@ -71,7 +71,7 @@ function hex2rgbTest
         1.0000    1.0000    1.0000
         ]) < 1e-4, 'all'));
 
-    rgb = hex2rgb(hexStr, OutputType="uint8");
+    rgb = hex2rgb(hexStr, 'OutputType', 'uint8');
     assert(isequal(rgb, [ ...
         000    17    34
         051    68    85
@@ -80,7 +80,7 @@ function hex2rgbTest
         204   221   238
         255   255   255]));
 
-    rgb = hex2rgb(hexStr, OutputType="uint16");
+    rgb = hex2rgb(hexStr, 'OutputType', 'uint16');
     assert(isequal(rgb, [ ...
         00000    4369    8738
         13107   17476   21845
