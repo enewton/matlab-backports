@@ -1,0 +1,25 @@
+function list = colormaplist()
+    list = [
+        "parula"
+        "turbo"
+        "hsv"
+        "hot"
+        "cool"
+        "spring"
+        "summer"
+        "autumn"
+        "winter"
+        "gray"
+        "bone"
+        "copper"
+        "pink"
+        "sky"
+        "abyss"
+        "nebula"
+        "jet"
+        "lines"
+        "colorcube"
+        "prism"
+        "flag"
+        "white"];
+end
